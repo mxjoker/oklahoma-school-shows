@@ -1,10 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Output as static site for Netlify (can switch to "standalone" for SSR)
-  output: "export",
-
-  // Allow trailing slashes for cleaner Netlify URLs
+  // Netlify handles routing — trailingSlash keeps URLs consistent
   trailingSlash: true,
 
   // Image optimization — disabled for static export (use next/image with unoptimized)

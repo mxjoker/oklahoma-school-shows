@@ -1,14 +1,13 @@
 [build]
   command   = "npm run build"
-  publish   = "out"
+  publish   = ".next"
 
 [build.environment]
-  NODE_VERSION = "20"
-  NEXT_TELEMETRY_DISABLED = "1"
+  NODE_VERSION                = "20"
+  NEXT_TELEMETRY_DISABLED     = "1"
 
-# ── Redirect: funkymonkeymagic.com → oklahomeschoolshows.com ──
-# Set this up in Netlify dashboard under Domain Management > Redirects
-# OR add funkymonkeymagic.com as a domain alias that 301-redirects
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
 
 # ── Cache headers for static assets ──
 [[headers]]
@@ -21,21 +20,16 @@
   [headers.values]
     Cache-Control = "public, max-age=86400"
 
-[[headers]]
-  for = "/*.html"
-  [headers.values]
-    Cache-Control = "public, max-age=0, must-revalidate"
-
 # ── Security headers ──
 [[headers]]
   for = "/*"
   [headers.values]
-    X-Frame-Options = "DENY"
-    X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "strict-origin-when-cross-origin"
-    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    X-Frame-Options         = "DENY"
+    X-Content-Type-Options  = "nosniff"
+    Referrer-Policy         = "strict-origin-when-cross-origin"
+    Permissions-Policy      = "camera=(), microphone=(), geolocation=()"
 
-# ── Redirects ──
+# ── Friendly redirects ──
 [[redirects]]
   from   = "/assemblies"
   to     = "/shows"
@@ -50,9 +44,3 @@
   from   = "/book"
   to     = "/book-now"
   status = 301
-
-# Catch-all for client-side routing (if switching to SSR later)
-# [[redirects]]
-#   from   = "/*"
-#   to     = "/index.html"
-#   status = 200
