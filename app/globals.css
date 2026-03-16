@@ -148,3 +148,105 @@
   .animate-delay-700 { animation-delay: 700ms; }
   .animate-delay-800 { animation-delay: 800ms; }
 }
+
+/* ─── Blog Post Typography ──────────────────────────────── */
+.prose-blog h2 {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.prose-blog h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-dark);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-blog p {
+  color: #4B5563;
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.prose-blog strong {
+  color: var(--color-dark);
+  font-weight: 700;
+}
+
+.prose-blog em {
+  font-style: italic;
+  color: var(--color-purple);
+}
+
+.prose-blog ul {
+  margin: 1.25rem 0 1.25rem 1.25rem;
+  list-style: none;
+  padding: 0;
+}
+
+.prose-blog li {
+  position: relative;
+  padding-left: 1.5rem;
+  color: #4B5563;
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+
+.prose-blog li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+  color: var(--color-gold);
+  font-size: 0.75rem;
+}
+
+.prose-blog a {
+  color: var(--color-purple);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(91, 45, 142, 0.3);
+  text-underline-offset: 3px;
+  transition: color 150ms ease, text-decoration-color 150ms ease;
+}
+
+.prose-blog a:hover {
+  color: var(--color-violet);
+  text-decoration-color: var(--color-violet);
+}
+
+.prose-blog code {
+  background: var(--color-mist);
+  color: var(--color-purple);
+  font-size: 0.875rem;
+  padding: 0.15em 0.4em;
+  border-radius: 0.35rem;
+  font-family: monospace;
+}
+
+.prose-blog hr {
+  border: none;
+  border-top: 2px solid #F4F0FF;
+  margin: 2.5rem 0;
+}
+
+.prose-blog blockquote {
+  border-left: 4px solid var(--color-purple);
+  padding: 0.75rem 1.25rem;
+  margin: 1.5rem 0;
+  background: var(--color-mist);
+  border-radius: 0 0.75rem 0.75rem 0;
+  color: var(--color-dark);
+  font-style: italic;
+}

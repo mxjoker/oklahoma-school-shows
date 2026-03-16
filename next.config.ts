@@ -1,38 +1,26 @@
 import type { NextConfig } from "next";
+import createMDX from "@next/mdx";
+
+// @next/mdx in Next 16 works best with no extra remark/rehype options
+// passed via the withMDX wrapper (serialization issues). We apply
+// remark-gfm via the mdx-components.tsx file instead.
+const withMDX = createMDX({});
 
 const nextConfig: NextConfig = {
-  // Netlify handles routing — trailingSlash keeps URLs consistent
+  pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
   trailingSlash: true,
-
-  // Image optimization — disabled for static export (use next/image with unoptimized)
   images: {
     unoptimized: true,
     remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "static.wixstatic.com",
-      },
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-      },
-      {
-        protocol: "https",
-        hostname: "i.ytimg.com",
-      },
+      { protocol: "https", hostname: "static.wixstatic.com" },
+      { protocol: "https", hostname: "images.unsplash.com" },
+      { protocol: "https", hostname: "i.ytimg.com" },
     ],
   },
-
-  // Strict mode for better dev experience
   reactStrictMode: true,
-
-  // Compiler options
   compiler: {
-    // Remove console.log in production
     removeConsole: process.env.NODE_ENV === "production",
   },
-
-  // Security headers are handled in netlify.toml for static export
 };
 
-export default nextConfig;
+export default withMDX(nextConfig);
