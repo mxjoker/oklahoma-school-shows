@@ -180,9 +180,13 @@ oklahoma-school-shows/
 │
 ├── content/
 │   └── blog/
-│       ├── how-to-plan-a-school-assembly-oklahoma.mdx     ✅ Principal planning guide
-│       ├── why-magic-is-the-best-teaching-tool.mdx        ✅ Thought leadership / science of magic
-│       └── best-school-assembly-ideas-oklahoma-elementary.mdx ✅ SEO ranking post
+│       ├── how-to-plan-a-school-assembly-oklahoma.mdx                  ✅ Principal planning guide
+│       ├── why-magic-is-the-best-teaching-tool.mdx                     ✅ Thought leadership / science of magic
+│       ├── best-school-assembly-ideas-oklahoma-elementary.mdx          ✅ SEO ranking post
+│       ├── how-much-does-a-school-assembly-cost.mdx                    ✅ Buyer intent / pricing
+│       ├── anti-bullying-assembly-programs-elementary-schools.mdx      ✅ Anti-bullying program SEO
+│       ├── back-to-school-assembly-ideas-elementary.mdx                ✅ Back-to-school planning SEO
+│       └── school-assembly-programs-texas-elementary-schools.mdx       ✅ Texas geo-target SEO
 │
 ├── lib/
 │   ├── blog.ts                                ✅ MDX reader, frontmatter, reading time, sort/filter
@@ -237,7 +241,7 @@ NEXT_PUBLIC_SITE_URL=https://oklahomeschoolshows.com
 | `/` | ✅ Built | 7 sections, fully animated |
 | `/about` | ✅ Built | ⚠️ Photo placeholder — swap with real image |
 | `/blog` | ✅ Built | |
-| `/blog/[slug]` | ✅ Built | Auto-generated from .mdx files |
+| `/blog/[slug]` | ✅ Built | Auto-generated from .mdx files — 7 posts total |
 | `/book-now` | ✅ Built | Needs RESEND_API_KEY in Netlify to send emails |
 | `/contact` | ✅ Built | Same form, different layout |
 | `/faq` | ✅ Built | 20 questions, 4 categories |
@@ -272,7 +276,7 @@ NEXT_PUBLIC_SITE_URL=https://oklahomeschoolshows.com
 | **Resend from address** | Netlify env var `RESEND_FROM_EMAIL` | After domain is verified in Resend dashboard |
 | **Testimonials** | `/lib/testimonialsData.ts` | 15 placeholder quotes — replace with real ones |
 | **Show descriptions** | `/lib/showsData.ts` | Verify all descriptions match actual show content |
-| **Blog posts** | `/content/blog/*.mdx` | 3 seed posts exist — add more anytime |
+| **Blog posts** | `/content/blog/*.mdx` | 7 posts exist — add more anytime |
 
 ---
 
@@ -372,6 +376,8 @@ key + aria-modal; NavDropdown keyboard toggle + aria-expanded/haspopup/role=menu
 - SSL certificate 🔲 (auto-provisions once DNS propagates)
 - Final smoke test 🔲 (run after SSL is live)
 - funkymonkeymagic.com — keeping separate, not redirecting (may become separate site for camps/shows)
+- Booking notification email set to joe.coover@gmail.com ✅
+- 4 additional SEO blog posts added (pricing, anti-bullying, back-to-school, Texas geo) ✅
 
 ### 🔲 Session 12 — Optional Enhancements
 Availability calendar. Quote calculator. Newsletter signup. Virtual show page.
