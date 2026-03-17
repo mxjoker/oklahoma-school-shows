@@ -1,5 +1,5 @@
 # 🎩 School Magic Assembly Website — Master Project Instructions
-*Last updated: After Session 10 complete. Session 11 (domain + launch) is next.*
+*Last updated: Session 11 in progress — DNS propagating, Search Console pending.*
 
 ---
 
@@ -361,10 +361,17 @@ robots.txt. Branded OpenGraph image via Next.js ImageResponse (edge runtime).
 Custom 404 not-found.tsx with quick links. Accessibility fixes: MobileMenu Escape
 key + aria-modal; NavDropdown keyboard toggle + aria-expanded/haspopup/role=menu.
 
-### 🔲 Session 11 — Domain, DNS & Launch ← START HERE
-Connect oklahomeschoolshows.com in Netlify. Update GoDaddy DNS.
-SSL auto-provisioned. funkymonkeymagic.com → 301 redirect.
-Submit sitemap to Google Search Console. Final smoke test.
+### 🔲 Session 11 — Domain, DNS & Launch (IN PROGRESS) ← START HERE
+- Site deployed at https://oklahoma-school-shows.netlify.app ✅
+- RESEND_API_KEY added to Netlify environment variables ✅
+- oklahomeschoolshows.com added to Netlify domain management ✅
+- GoDaddy nameservers updated to Netlify DNS ✅ (propagation in progress)
+- Google Search Console property created ✅
+- GSC TXT verification record added to Netlify DNS ✅ (pending propagation)
+- Sitemap submitted to Search Console 🔲 (blocked until DNS propagates — submit sitemap.xml once domain is live)
+- SSL certificate 🔲 (auto-provisions once DNS propagates)
+- Final smoke test 🔲 (run after SSL is live)
+- funkymonkeymagic.com — keeping separate, not redirecting (may become separate site for camps/shows)
 
 ### 🔲 Session 12 — Optional Enhancements
 Availability calendar. Quote calculator. Newsletter signup. Virtual show page.
