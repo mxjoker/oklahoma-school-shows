@@ -57,6 +57,15 @@ function NavDropdown({
     >
       <Link
         href={item.href}
+        aria-expanded={"children" in item ? open : undefined}
+        aria-haspopup={"children" in item ? "menu" : undefined}
+        onKeyDown={(e) => {
+          if ("children" in item && (e.key === "Enter" || e.key === " ")) {
+            e.preventDefault();
+            setOpen((v) => !v);
+          }
+          if (e.key === "Escape") setOpen(false);
+        }}
         className={cn(
           "flex items-center gap-1 px-3 py-2 rounded-xl font-heading font-bold text-sm transition-colors",
           isActive
@@ -76,11 +85,12 @@ function NavDropdown({
       </Link>
 
       {"children" in item && open && (
-        <div className="absolute top-full left-0 mt-2 w-52 bg-white rounded-2xl shadow-card-hover border border-brand-mist z-50 overflow-hidden animate-fade-in">
+        <div role="menu" className="absolute top-full left-0 mt-2 w-52 bg-white rounded-2xl shadow-card-hover border border-brand-mist z-50 overflow-hidden animate-fade-in">
           {item.children!.map((child) => (
             <Link
               key={child.href}
               href={child.href}
+              role="menuitem"
               className="flex items-center px-4 py-3 text-sm font-body text-brand-dark hover:bg-brand-mist hover:text-brand-purple transition-colors border-b border-brand-mist/50 last:border-0"
             >
               {child.label}

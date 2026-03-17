@@ -37,7 +37,7 @@ interface MobileMenuProps {
 }
 
 export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
-  // Lock body scroll when open
+  // Lock body scroll + close on Escape
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -46,6 +46,14 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
     }
     return () => { document.body.style.overflow = ""; };
   }, [isOpen]);
+
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") onClose();
+    }
+    if (isOpen) document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 
@@ -68,6 +76,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           "animate-slide-in"
         )}
         role="dialog"
+        aria-modal="true"
         aria-label="Mobile navigation"
       >
         {/* Header */}
