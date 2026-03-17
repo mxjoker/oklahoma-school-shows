@@ -8,7 +8,7 @@ import { Resend } from "resend";
    ─────────────────────────────────────────────────────────── */
 
 // ✏️ UPDATE THIS — the email that receives booking notifications
-export const BOOKING_TO_EMAIL = "your@email.com";
+export const BOOKING_TO_EMAIL = "joe.coover@gmail.com";
 
 // ✏️ UPDATE THIS — the "from" address (must be verified in Resend dashboard)
 // Until your domain is verified, use: onboarding@resend.dev
