@@ -1,5 +1,5 @@
 # 🎩 School Magic Assembly Website — Master Project Instructions
-*Last updated: Session 11 in progress — DNS propagating, Search Console pending.*
+*Last updated: Session 11 complete. Site is live at https://oklahomaschoolshows.com. Session 12 (optional enhancements) is next.*
 
 ---
 
@@ -365,21 +365,21 @@ robots.txt. Branded OpenGraph image via Next.js ImageResponse (edge runtime).
 Custom 404 not-found.tsx with quick links. Accessibility fixes: MobileMenu Escape
 key + aria-modal; NavDropdown keyboard toggle + aria-expanded/haspopup/role=menu.
 
-### 🔲 Session 11 — Domain, DNS & Launch (IN PROGRESS) ← START HERE
+### ✅ Session 11 — Domain, DNS & Launch
 - Site deployed at https://oklahoma-school-shows.netlify.app ✅
 - RESEND_API_KEY added to Netlify environment variables ✅
-- oklahomaschoolshows.com added to Netlify domain management ✅
-- GoDaddy nameservers updated to Netlify DNS ✅ (propagation in progress)
-- Google Search Console property created ✅
-- GSC TXT verification record added to Netlify DNS ✅ (pending propagation)
-- Sitemap submitted to Search Console 🔲 (blocked until DNS propagates — submit sitemap.xml once domain is live)
-- SSL certificate 🔲 (auto-provisions once DNS propagates)
-- Final smoke test 🔲 (run after SSL is live)
-- funkymonkeymagic.com — keeping separate, not redirecting (may become separate site for camps/shows)
+- oklahomaschoolshows.com live with SSL ✅
+- GoDaddy nameservers pointed to Netlify DNS ✅
+- www → apex 301 redirect working ✅
+- Google Search Console property created + TXT verification record added ✅
+- Sitemap submitted to Google Search Console ✅
+- All smoke tests passed ✅
+- Domain typo fixed across entire codebase (oklahomeschoolshows → oklahomaschoolshows) ✅
 - Booking notification email set to joe.coover@gmail.com ✅
 - 4 additional SEO blog posts added (pricing, anti-bullying, back-to-school, Texas geo) ✅
+- funkymonkeymagic.com — keeping separate (may become site for camps/shows)
 
-### 🔲 Session 12 — Optional Enhancements
+### 🔲 Session 12 — Optional Enhancements ← START HERE
 Availability calendar. Quote calculator. Newsletter signup. Virtual show page.
 
 ---
