@@ -5,11 +5,11 @@ import { characterShow } from "@/lib/showsData";
 export const metadata: Metadata = {
   title: characterShow.metaTitle,
   description: characterShow.metaDescription,
-  alternates: { canonical: "https://oklahomeschoolshows.com/shows/character-education" },
+  alternates: { canonical: "https://oklahomaschoolshows.com/shows/character-education" },
   openGraph: {
     title: characterShow.metaTitle,
     description: characterShow.metaDescription,
-    url: "https://oklahomeschoolshows.com/shows/character-education",
+    url: "https://oklahomaschoolshows.com/shows/character-education",
   },
 };
 

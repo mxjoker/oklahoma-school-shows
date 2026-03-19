@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { getAllSlugs } from "@/lib/blog";
 import { allServiceAreaSlugs } from "@/lib/serviceAreaData";
 
-const BASE_URL = "https://oklahomeschoolshows.com";
+const BASE_URL = "https://oklahomaschoolshows.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const blogSlugs = getAllSlugs();

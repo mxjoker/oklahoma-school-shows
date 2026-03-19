@@ -5,7 +5,7 @@ import "./globals.css";
 
 /* ─── Site Metadata ─────────────────────────────────────── */
 export const metadata: Metadata = {
-  metadataBase: new URL("https://oklahomeschoolshows.com"),
+  metadataBase: new URL("https://oklahomaschoolshows.com"),
 
   title: {
     default: "Funky Monkey Magic | Oklahoma School Assembly Shows",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://oklahomeschoolshows.com",
+    url: "https://oklahomaschoolshows.com",
     siteName: "Funky Monkey Magic School Shows",
     title: "Funky Monkey Magic | Oklahoma School Assembly Shows",
     description:

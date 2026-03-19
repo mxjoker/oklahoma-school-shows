@@ -105,7 +105,7 @@ export default function OGImage() {
             display: "flex",
           }}
         >
-          oklahomeschoolshows.com
+          oklahomaschoolshows.com
         </div>
       </div>
     ),

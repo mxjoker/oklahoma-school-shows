@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "School Assembly Tips & Resources | Funky Monkey Magic Blog",
   description:
     "Practical advice for Oklahoma principals, PTA coordinators, and teachers — how to plan great school assemblies, the science of magic-based learning, and more.",
-  alternates: { canonical: "https://oklahomeschoolshows.com/blog" },
+  alternates: { canonical: "https://oklahomaschoolshows.com/blog" },
 };
 
 const CATEGORY_COLORS: Record<string, string> = {

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "School Assembly Programs | Funky Monkey Magic Oklahoma",
   description:
     "5 educational magic assembly programs for elementary schools — Science, Reading, Math, Character Education, and Anti-Bullying. All curriculum-aligned, all unforgettable. Serving Oklahoma and surrounding states.",
-  alternates: { canonical: "https://oklahomeschoolshows.com/shows" },
+  alternates: { canonical: "https://oklahomaschoolshows.com/shows" },
 };
 
 const shows = Object.values(ALL_SHOWS);

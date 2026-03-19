@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Contact Us | Funky Monkey Magic School Shows",
   description:
     "Get in touch with Funky Monkey Magic. Questions about booking, pricing, or show availability — we respond within 24 hours.",
-  alternates: { canonical: "https://oklahomeschoolshows.com/contact" },
+  alternates: { canonical: "https://oklahomaschoolshows.com/contact" },
 };
 
 const CONTACT_ITEMS = [

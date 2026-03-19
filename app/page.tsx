@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "Educational magic assembly shows that captivate students AND meet curriculum goals. " +
     "Serving Oklahoma, Texas, Arkansas, Kansas & Missouri. 100% money-back guarantee.",
   alternates: {
-    canonical: "https://oklahomeschoolshows.com",
+    canonical: "https://oklahomaschoolshows.com",
   },
 };
 

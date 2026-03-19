@@ -5,11 +5,11 @@ import { mathShow } from "@/lib/showsData";
 export const metadata: Metadata = {
   title: mathShow.metaTitle,
   description: mathShow.metaDescription,
-  alternates: { canonical: "https://oklahomeschoolshows.com/shows/math" },
+  alternates: { canonical: "https://oklahomaschoolshows.com/shows/math" },
   openGraph: {
     title: mathShow.metaTitle,
     description: mathShow.metaDescription,
-    url: "https://oklahomeschoolshows.com/shows/math",
+    url: "https://oklahomaschoolshows.com/shows/math",
   },
 };
 

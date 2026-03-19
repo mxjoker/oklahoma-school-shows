@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "School Testimonials | Funky Monkey Magic Oklahoma",
   description:
     "Read what principals, teachers, and PTA coordinators say about Funky Monkey Magic school assembly shows. 500+ schools served across Oklahoma and the surrounding region.",
-  alternates: { canonical: "https://oklahomeschoolshows.com/testimonials" },
+  alternates: { canonical: "https://oklahomaschoolshows.com/testimonials" },
 };
 
 /* Quick stats from the data */

@@ -16,7 +16,7 @@ export const RESEND_FROM_EMAIL =
   process.env.RESEND_FROM_EMAIL ?? "Funky Monkey Magic <onboarding@resend.dev>";
 
 export const SITE_NAME = "Funky Monkey Magic School Shows";
-export const SITE_URL  = "https://oklahomeschoolshows.com";
+export const SITE_URL  = "https://oklahomaschoolshows.com";
 export const PHONE     = "(405) 431-6625";
 
 /* ─── Form data shape ────────────────────────────────────── */

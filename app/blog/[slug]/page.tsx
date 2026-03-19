@@ -24,11 +24,11 @@ export async function generateMetadata({
   return {
     title: `${post.title} | Funky Monkey Magic Blog`,
     description: post.description,
-    alternates: { canonical: `https://oklahomeschoolshows.com/blog/${slug}` },
+    alternates: { canonical: `https://oklahomaschoolshows.com/blog/${slug}` },
     openGraph: {
       title: post.title,
       description: post.description,
-      url: `https://oklahomeschoolshows.com/blog/${slug}`,
+      url: `https://oklahomaschoolshows.com/blog/${slug}`,
       type: "article",
       publishedTime: post.date,
       authors: [post.author],

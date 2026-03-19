@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "About Joe Coover | Funky Monkey Magic School Assembly Shows",
   description:
     "Meet Joe Coover — Oklahoma's #1 school assembly magician. 10+ years performing for elementary schools across Oklahoma, Texas, Arkansas, Kansas, and Missouri.",
-  alternates: { canonical: "https://oklahomeschoolshows.com/about" },
+  alternates: { canonical: "https://oklahomaschoolshows.com/about" },
 };
 
 /* ─── Timeline data ──────────────────────────────────────── */
@@ -41,7 +41,7 @@ const TIMELINE = [
   },
   {
     year: "Now",
-    title: "oklahomeschoolshows.com",
+    title: "oklahomaschoolshows.com",
     body: "Dedicated school assembly website launched to make it easier for principals and PTA coordinators to find, book, and plan the perfect assembly.",
   },
 ];

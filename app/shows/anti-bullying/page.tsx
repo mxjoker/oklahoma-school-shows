@@ -5,11 +5,11 @@ import { antibullyingShow } from "@/lib/showsData";
 export const metadata: Metadata = {
   title: antibullyingShow.metaTitle,
   description: antibullyingShow.metaDescription,
-  alternates: { canonical: "https://oklahomeschoolshows.com/shows/anti-bullying" },
+  alternates: { canonical: "https://oklahomaschoolshows.com/shows/anti-bullying" },
   openGraph: {
     title: antibullyingShow.metaTitle,
     description: antibullyingShow.metaDescription,
-    url: "https://oklahomeschoolshows.com/shows/anti-bullying",
+    url: "https://oklahomaschoolshows.com/shows/anti-bullying",
   },
 };
 

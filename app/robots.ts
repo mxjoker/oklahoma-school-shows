@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/api/",
     },
-    sitemap: "https://oklahomeschoolshows.com/sitemap.xml",
+    sitemap: "https://oklahomaschoolshows.com/sitemap.xml",
   };
 }

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Frequently Asked Questions | Funky Monkey Magic School Shows",
   description:
     "Everything you need to know about booking a Funky Monkey Magic school assembly show — pricing, logistics, travel, show length, age groups, and more.",
-  alternates: { canonical: "https://oklahomeschoolshows.com/faq" },
+  alternates: { canonical: "https://oklahomaschoolshows.com/faq" },
 };
 
 /* ─── FAQ data ───────────────────────────────────────────── */

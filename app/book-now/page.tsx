@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Book a School Assembly Show | Funky Monkey Magic",
   description:
     "Check availability and book an educational magic assembly show for your school. Fast response, no deposit required, 100% money-back guarantee. Serving Oklahoma and surrounding states.",
-  alternates: { canonical: "https://oklahomeschoolshows.com/book-now" },
+  alternates: { canonical: "https://oklahomaschoolshows.com/book-now" },
 };
 
 const TRUST_POINTS = [

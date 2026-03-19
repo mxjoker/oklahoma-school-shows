@@ -16,8 +16,8 @@ Built with Next.js 16 App Router, deployed to Netlify, zero monthly platform cos
 | Performer Name | Joe Coover |
 | Brand | Funky Monkey Magic |
 | Parent Company | Funky Monkey Events |
-| Primary Domain | oklahomeschoolshows.com |
-| Redirect Domain | funkymonkeymagic.com → 301 to oklahomeschoolshows.com |
+| Primary Domain | oklahomaschoolshows.com |
+| Redirect Domain | funkymonkeymagic.com → 301 to oklahomaschoolshows.com |
 | Registrar | GoDaddy (both domains) |
 | Phone | (405) 431-6625 |
 | Email | booking@funkymonkeyevents.com |
@@ -223,13 +223,13 @@ RESEND_API_KEY=re_your_actual_key_here
 #
 # Line 15-16: export const RESEND_FROM_EMAIL =
 #               process.env.RESEND_FROM_EMAIL ?? "Funky Monkey Magic <onboarding@resend.dev>"
-#          → Once oklahomeschoolshows.com domain is verified in Resend dashboard,
-#            set RESEND_FROM_EMAIL env var to: Funky Monkey Magic <noreply@oklahomeschoolshows.com>
+#          → Once oklahomaschoolshows.com domain is verified in Resend dashboard,
+#            set RESEND_FROM_EMAIL env var to: Funky Monkey Magic <noreply@oklahomaschoolshows.com>
 #          → Until then, onboarding@resend.dev works for testing (sends to your own email only)
 
 # ── Optional ────────────────────────────────────────────────────────────
 NEXT_PUBLIC_YOUTUBE_VIDEO_ID=your_youtube_video_id_here
-NEXT_PUBLIC_SITE_URL=https://oklahomeschoolshows.com
+NEXT_PUBLIC_SITE_URL=https://oklahomaschoolshows.com
 ```
 
 ---
@@ -368,7 +368,7 @@ key + aria-modal; NavDropdown keyboard toggle + aria-expanded/haspopup/role=menu
 ### 🔲 Session 11 — Domain, DNS & Launch (IN PROGRESS) ← START HERE
 - Site deployed at https://oklahoma-school-shows.netlify.app ✅
 - RESEND_API_KEY added to Netlify environment variables ✅
-- oklahomeschoolshows.com added to Netlify domain management ✅
+- oklahomaschoolshows.com added to Netlify domain management ✅
 - GoDaddy nameservers updated to Netlify DNS ✅ (propagation in progress)
 - Google Search Console property created ✅
 - GSC TXT verification record added to Netlify DNS ✅ (pending propagation)
@@ -400,7 +400,7 @@ Let's continue.
 ---
 
 ## DNS Notes (Session 11)
-- Primary: `oklahomeschoolshows.com` → Netlify (A record or CNAME)
-- Redirect: `funkymonkeymagic.com` → 301 to `oklahomeschoolshows.com` (set in Netlify domain settings)
+- Primary: `oklahomaschoolshows.com` → Netlify (A record or CNAME)
+- Redirect: `funkymonkeymagic.com` → 301 to `oklahomaschoolshows.com` (set in Netlify domain settings)
 - Both domains registered at GoDaddy — update DNS there
 - Netlify provides free SSL (Let's Encrypt) automatically once domain is connected
